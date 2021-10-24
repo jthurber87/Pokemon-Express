@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="/style.css">
+        <script src="app.js" charset="utf-8"></script>
+        <title>Pokédex</title>
+    </head>
+    <body>
+      <div class="pokemon">
+        <div class="screen">
+          <ul>
+            <% for (let i = 0; i < allPokemon.length; i++) { %>
+            <li>
+              <a href="/pokemon/<%=i%>">
+                <%=i+1%>.<%=allPokemon[i].name%>
+                <form action="/pokemon/<%=i%>?_method=DELETE" method="POST" style="display: inline-block">
+                     <input class="button" type="submit" value="X">
+                </form>
+              </a>
+            </li>
+            <% } %>
+          </ul>
+        </div>
+        <div class="subscreen">
+          <a href="/pokemon/new">New</a>
+      </div>
+      </body>
+</html>

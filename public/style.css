@@ -1,0 +1,101 @@
+/* Working */
+* {
+     margin: 0;
+     padding: 0;
+}
+
+@font-face {
+     font-family: pokemon;
+     src: url('/assets/pokemon.ttf');
+}
+
+body {
+     font-family: pokemon;
+     font-size: 10px;
+     height: 100vh;
+     display: flex;
+     flex-flow: column wrap;
+     justify-content: center;
+     align-items: center;
+     background-image: url('/assets/XIhAQL.jpeg');
+     background-size: cover;
+     background-attachment: fixed;
+}
+
+.screen {
+     background-color: white;
+     overflow-y: auto;
+     width: 158px;
+     height: 108px;
+     margin-top: 151px;
+     margin-left: 57px;
+     padding-top: 5px;
+     text-align: left;
+}
+
+.subscreen {
+     background-color: #61B670;
+     font-size: 9px;
+     width: 86px;
+     height: 46px;
+     margin-top: 98px;
+     margin-left: 68px;
+     padding-top: 5px;
+     text-align: center;
+     overflow: hidden;
+}
+
+li {
+     list-style: none;
+}
+
+input {
+     width: 90%;
+     font-family: pokemon;
+     font-size: 12px;
+     text-align: center;
+     margin-top: 3px;
+     margin-bottom: 5px;
+     /* box-shadow: 1px 1px black; */
+     background-color: inherit;
+     padding: 3px 0px 0px 3px
+}
+
+img {
+     width: 80%;
+     height: 95%
+}
+
+a:hover {
+     color: blue;
+     cursor: default;
+     transition: .2s;
+}
+
+.pokemon {
+     height: 75vh;
+     width: 300px;
+     border-radius: 10px;
+     box-shadow: 5px 5px 5px black;
+     text-align: center;
+     background-image: url('/assets/5818337.jpg');
+     background-size: contain;
+}
+
+.button {
+     border: none;
+     background-color: none;
+     font-family: pokemon;
+     font-size: 8px;
+     padding-top: 2px;
+     /* transition: .2s; */
+}
+
+.button:hover {
+     border: none;
+     color: red;
+     cursor: default;
+     font-family: pokemon;
+     font-size: 8px;
+     padding-top: 2px;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/style.css">
+    <title>New Pokémon</title>
+  </head>
+  <body>
+    <div class="pokemon">
+      <div class="screen">
+        <form action="/pokemon" method="POST">
+          <label for="name" style="color: black">Name:</label>
+          <input type="text" name="name" id="name" autocomplete="off" style="line-height: 1.4"/>
+          <label for="img">Image URL:</label>
+          <input type="text" name="img" id="img" autocomplete="off" value="https://static.wikia.nocookie.net/brokenpkmn/images/1/1a/MissingNo.jpg"style="line-height: 1.4" />
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+      <div class="subscreen">
+           <a href="/pokemon">Back</a>
+      </div>
+    </div>
+  </body>
+</html>
